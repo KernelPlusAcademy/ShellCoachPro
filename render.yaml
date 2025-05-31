@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: shellcoach-pro
+    env: static
+    buildCommand: null
+    staticPublishPath: .

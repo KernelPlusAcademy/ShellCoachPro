@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShellCoach Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/xterm/css/xterm.css" />
+</head>
+<body class="bg-gray-900 text-white font-mono">
+    <div class="p-4 bg-gray-800 flex justify-between items-center">
+        <div class="text-xl font-bold">ShellCoach</div>
+        <div>
+            <button onclick="signIn()" class="bg-green-600 px-4 py-1 rounded">Login</button>
+            <button onclick="signOut()" class="bg-red-600 px-4 py-1 rounded ml-2">Logout</button>
+            <span id="user-info" class="ml-4"></span>
+        </div>
+    </div>
+    <div class="flex h-[90vh]">
+        <aside class="w-1/4 bg-gray-800 p-4 overflow-y-auto">
+            <h2 class="text-lg font-bold mb-4">Beginner Labs</h2>
+            <ul id="lab-list" class="space-y-2"></ul>
+        </aside>
+        <main class="w-3/4 p-4">
+            <div class="mb-4" id="lab-instructions"></div>
+            <div id="terminal" class="border border-gray-600 h-[70vh]"></div>
+        </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="https://unpkg.com/xterm/lib/xterm.js"></script>
+    <script src="src/firebase-config.js"></script>
+    <script src="src/auth.js"></script>
+    <script src="src/command-engine-pro.js"></script>
+    <script src="src/lab-checker.js"></script>
+</body>
+</html>

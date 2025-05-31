@@ -1,0 +1,13 @@
+
+[
+    {
+        "title": "List Directory",
+        "instructions": "Use the 'ls' command to list files in the current directory.",
+        "command": "ls"
+    },
+    {
+        "title": "Make a Directory",
+        "instructions": "Create a folder called 'projects' using the 'mkdir' command.",
+        "command": "mkdir projects"
+    }
+]
